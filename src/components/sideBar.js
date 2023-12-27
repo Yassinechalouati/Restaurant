@@ -1,5 +1,4 @@
-import { IoStatsChartSharp } from "react-icons/io5";
-import { FaHome } from "react-icons/fa";
+import { MdAdminPanelSettings } from "react-icons/md";
 import { IoFastFood } from "react-icons/io5";
 import Item from "./item";
 
@@ -10,9 +9,8 @@ export default function SideBar() {
       className="h-20 w-20 "
       src="chillis.png" 
       alt="logo"></img>
-      <Item icon ={<FaHome size="30" color="white"></FaHome>} text="Home" index="0" ></Item>
       <Item icon ={<IoFastFood size="30" color="white"></IoFastFood>} text="Food" index ="1" ></Item>
-      <Item icon ={<IoStatsChartSharp size="30" color="white"></IoStatsChartSharp>} text="Statistics" index="2" ></Item>
+      <Item icon ={<MdAdminPanelSettings size="30" color="white"></MdAdminPanelSettings>} text="Admin creation" index="2" ></Item>
     </div>
   );
 }

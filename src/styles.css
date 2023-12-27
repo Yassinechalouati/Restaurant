@@ -1,0 +1,172 @@
+/* src/styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .header {
+    text-align: left;
+    padding: 12% 5%;
+    margin-top: 0;
+    background-image: url('../public/chillis.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+  }
+
+.header p {
+  color: white; 
+  margin-top: 200px; 
+}
+
+.header h1 {
+  color: #6ee22a; 
+  font-size: 2.5rem;
+}
+
+  
+  .button {
+    display: inline-block;
+    padding: 25px 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #db2222;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #cd2120;
+  }
+
+  .notremenu {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Lemonada', cursive;
+    font-size: 3.5rem;
+    
+  }
+  
+  .notremenu p {
+    color: #db2222;
+  }
+
+  .notremenu hr {
+    border: 2px solid #db2222; 
+    margin-top: -70px; 
+    width: 60%;
+  }
+  
+  .menu-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; 
+  }
+  
+  .icon {
+    margin: 0 10px;
+    color: #db2222;   }
+
+    .nos-fajitas p {
+        color: #4aa80e; /* Green color for Nos Fajitas */
+        text-align: left;
+        font-family: 'Lemonada', cursive;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-left: 100px;
+    }
+    
+    .fajita-item .trio-name {
+        color: #db2222; /* Red color for Trio Fajitas */
+        text-align: left;
+        font-family: 'Lemonada', cursive;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+
+    .fajitas-images .fajita-item {
+        text-align: center; /* Adjust as needed */
+        margin-bottom: 20px; /* Add margin between fajita items */
+    }
+    
+.fajitas-images img {
+    width: 400px;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Add margin between image and text */
+}
+    
+    .fajitas-images img:last-child {
+        margin-right: 0; /* Remove margin for the last image */
+    }
+
+  .fajitas-images {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px; 
+  }
+  
+  .fajita-item .price.price-style {
+    color: #4aa80e; /* Choose the color you want for the price */
+    font-family: 'Arial', sans-serif; /* Add your additional font for the price */
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.8rem; 
+    margin-left: 0px;
+    margin-top: -30px;
+  }
+
+  .voir {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.voirplus {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #db2222; /* Choose the color you want for the underline text */
+}
+
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 1000px; /* Set a maximum width if desired */
+  height: 500px;
+  border-radius: 20px;
+}
+
+.white {
+    position: absolute;
+    top: 440%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .white {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem; 
+    font-family: 'Lemonada', cursive;/* Adjust the font size as needed */
+  }
+  
