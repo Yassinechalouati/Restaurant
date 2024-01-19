@@ -35,7 +35,7 @@ export default function Login() {
     }
     return(
         <div className="bg-[#f4f5f8] h-screen w-screen flex justify-center items-center ">
-            <form className="bg-white rounded-md w-[25%] h-[40%] justify-center items-center p-5 flex flex-col space-y-8">
+            <form className="bg-white rounded-md w-[90%] xl:w-[30%] md:w-[50%] h-[80%] md:h-[40%] xl:h-[40%] justify-center items-center p-5 flex flex-col space-y-8">
             <span className="text-center text-lg font-bold">Welcome to the Admin panel! 👋<br></br> <p className="text-gray-400 text-md">Please sign-in to your account</p></span>
             <input
                     value={username}

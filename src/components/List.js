@@ -172,7 +172,7 @@ export default function Card() {
 
 
     return(
-        <div className="bg-white rounded-md w-full max-h-[70%] p-5 flex flex-col">
+        <div className="bg-white rounded-md w-full max-h-[80%] md:max-h-[70%] lg:max-h-[70%] xl:max-h-[70%] p-5 flex flex-col">
             <div className="text-lg text-center font-bold mb-5">Food List</div>
             <input
                 onChange={handleSearch}
@@ -184,7 +184,7 @@ export default function Card() {
             <Table setId={setId} setVisible= {setModal} food ={filteredFood.length >0? filteredFood: food} setFood={setFood} setEdit={setEdit}></Table>
             <div 
                 onClick={handleClick}
-                className="mt-6 flex space-x-2 flex-row px-5 py-2 justify-center items-center self-center text-center transition-colors duration-300 hover:text-white hover:shadow-md hover:bg-[#008e38] cursor-pointer border-[1px] border-[#008e38] rounded-md text-[#008e38] "
+                className="mt-auto flex space-x-2 flex-row px-5 py-2 justify-center items-center self-center text-center transition-colors duration-300 hover:text-white hover:shadow-md hover:bg-[#008e38] cursor-pointer border-[1px] border-[#008e38] rounded-md text-[#008e38] "
                 >
                     <IoMdAddCircleOutline size="23" ></IoMdAddCircleOutline>
                     <p> Add food</p>
@@ -198,7 +198,7 @@ export default function Card() {
             {   
                 modal!=="" && modal!==null?
                 <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-[1px] flex justify-center items-center">
-                <div ref={deleteRef} className={`bg-white w-[30%] h-[25%] flex flex-col items-center rounded-md `} >
+                <div ref={deleteRef} className={`bg-white w-[95%] md:w-[55%] lg:w-[50%] xl:w-[30%] h-[25%] flex flex-col items-center rounded-md `} >
                     <div className=" flex-grow flex space-y-6 flex-col items-center justify-center h-[92%] w-[100%]">
                         <div className="text-lg font-bold"> Are you sure you want to delete this element ? </div>
                         <div> this item will be deleted immediately. You can't undo this action.</div>
@@ -225,7 +225,7 @@ export default function Card() {
             {
                 edit!=="" && edit!==null?
                 <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-[1px] flex justify-center items-center">
-                    <div ref={editRef} className={`bg-[#303030] w-[35%] h-[80%] flex flex-col items-center rounded-md `} >
+                    <div ref={editRef} className={`bg-[#303030] w-[90%] md:w-[50%] lg:w-[35%] xl:w-[35%] h-[80%] flex flex-col items-center rounded-md `} >
                     <div className={`flex items-center h-[8%] justify-center bg-black bg-opacity-30 w-full px-3 rounded-t-md`}>
                         <div className="flex-grow text-center">
                             <span className="text-white text-lg">Add Food</span>
@@ -242,13 +242,13 @@ export default function Card() {
                                 placeholder="Enter food name..."
                                 />
                             <input
-                                    value={price}
-                                    onChange={handlePriceChange}
-                                    type="number"
-                                    min="0"
-                                    required
-                                    className=" w-[80%] border border-gray-300 focus:outline-none focus:border-indigo-500 px-4 py-2 rounded-md transition-all duration-300"
-                                    placeholder="Enter price..."
+                                value={price}
+                                onChange={handlePriceChange}
+                                type="number"
+                                min="0"
+                                required
+                                className=" w-[80%] border border-gray-300 focus:outline-none focus:border-indigo-500 px-4 py-2 rounded-md transition-all duration-300"
+                                placeholder="Enter price..."
                                 />
 
                             <input className="hidden" required accept="image/*" size="5000000" onChange={handleImageChange} ref={imageRef} type="file" ></input>

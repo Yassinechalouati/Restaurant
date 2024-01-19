@@ -63,7 +63,6 @@ export default function Modal({setVisible}) {
         try {
             const response = await axios.post('http://localhost:5000/upload', formData)
             console.log(response)
-
             setPrice('')
             setFood('')
             setImage('')
@@ -83,7 +82,7 @@ export default function Modal({setVisible}) {
     console.log(price, food)
   return (
     <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-[1px] flex justify-center items-center">
-        <div ref={addRef} className={`bg-[#303030] w-[35%] h-[80%] flex flex-col items-center rounded-md `} >
+        <div ref={addRef} className={`bg-[#303030] w-[90%] md:w-[50%] lg:w-[35%] xl:w-[35%] h-[80%] flex flex-col items-center rounded-md `} >
         <div className={`flex items-center h-[8%] justify-center bg-black bg-opacity-30 w-full px-3 rounded-t-md`}>
             <div className="flex-grow text-center">
                 <span className="text-white text-lg">Add Food</span>
