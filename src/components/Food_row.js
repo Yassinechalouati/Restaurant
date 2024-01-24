@@ -16,7 +16,6 @@ export default function Row({food, setVisible, index, setEdit, setId}) {
 
 
     useEffect(() => {
-        // Fetch the image data from the API endpoint
         axios.get(`http://localhost:5000/api/uploads/${food.picture}`, {
           responseType: 'blob',
         })
